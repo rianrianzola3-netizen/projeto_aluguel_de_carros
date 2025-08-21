@@ -7,10 +7,6 @@ carros = ['BMW','ferrari','skyline','mustang']
 modelo = st.sidebar.selectbox('escolha o carro',carros)
 
 st.title('rianzola aluguel de carros')
-st.write(f'voce escolheu {modelo}')
-st.image(f'{modelo}.png')
-
-st.title('car future - aluguel de carros')
 
 st.markdown(f'## voce escolheu um carro:{modelo}')
 st.image(f'{modelo}.png')
@@ -39,4 +35,5 @@ if st.button('calcular') :
     aluguel = total_dias + total_km
 
     st. warning(f'voce alugou o {modelo} por {dias} e rodou {km}km. o valor do aluguel será r${aluguel}')
+
 
